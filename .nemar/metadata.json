@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005292",
-  "source": "openneuro",
-  "source_id": "ds005292",
+  "pipeline_stage": "validated",
   "title": "142 by Biosemi",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Zhao Xiangyue": {},
     "Zhou Jingyao": {},
@@ -13,21 +13,61 @@
     "Bi Yanzhi": {},
     "Hu Li": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005292.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005292",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005292",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.1.1",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".fdt",
+    ".json",
+    ".m",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 142 participants during a laser-evoked pain experiment. Participants received fixed-intensity nociceptive stimuli at two levels (low and high pain) across three blocks of 10 stimuli each, followed by subjective pain intensity ratings on a 0-10 scale. The dataset provides neurophysiological correlates of pain perception and subjective pain assessment.",
+  "methods_description": "EEG data were acquired using a Biosemi system during laser pain stimulation. Participants received fixed-intensity pain stimuli (3J/3.5J for participants 1-135; 3.5J/4J for participants 136-142) in three blocks of 10 stimuli each. After each stimulus, participants provided pain intensity ratings on a scale from 0 (no sensation) to 10 (unbearable pain). Participants were instructed to maintain fixation on a crosshair display and keep their eyes open throughout the experiment.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Pain Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D058748"
+    },
+    {
+      "term": "laser-evoked potentials"
+    },
+    {
+      "term": "Nociception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D059225"
+    },
+    {
+      "term": "subjective pain rating"
+    }
+  ],
+  "source_hash": "32f01511f63e93c16ed366856be2a8a60364b3c021f1a94c9ae2f8ff18df79bf"
 }
