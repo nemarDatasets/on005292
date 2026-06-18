@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "142 by Biosemi",
+  "description": "This dataset comprises EEG recordings from 142 participants who received laser-induced pain stimuli of varying intensities while providing subjective pain ratings. Participants were presented with low and high pain stimuli across three blocks of ten trials each, with pain intensity assessed on a 0-10 scale. The study investigates the neural correlates of pain perception using high-density EEG recording with Biosemi equipment.",
+  "methods_description": "EEG data were acquired using Biosemi equipment during laser pain stimulation. Participants received fixed-intensity pain stimuli (3J and 3.5J for participants 1-135; 3.5J and 4J for participants 136-142) delivered in three blocks of 10 stimuli each. Following each stimulus, participants provided pain intensity ratings on a scale from 0 (no sensation) to 10 (unbearable pain). Participants were instructed to maintain fixation on a crosshair display and keep their eyes open throughout the experiment.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,24 @@
     "Bi Yanzhi": {},
     "Hu Li": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005292.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "pain perception"
+    },
+    {
+      "term": "laser stimulation"
+    },
+    {
+      "term": "nociception"
+    },
+    {
+      "term": "subjective pain rating"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005292",
       "identifier_type": "URL",
@@ -28,14 +42,19 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005292",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005292.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "124.6 GB (1280 files)"
   ],
   "formats": [
     ".bdf",
@@ -44,30 +63,8 @@
     ".m",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 142 participants during a laser-evoked pain experiment. Participants received fixed-intensity nociceptive stimuli at two levels (low and high pain) across three blocks of 10 stimuli each, followed by subjective pain intensity ratings on a 0-10 scale. The dataset provides neurophysiological correlates of pain perception and subjective pain assessment.",
-  "methods_description": "EEG data were acquired using a Biosemi system during laser pain stimulation. Participants received fixed-intensity pain stimuli (3J/3.5J for participants 1-135; 3.5J/4J for participants 136-142) in three blocks of 10 stimuli each. After each stimulus, participants provided pain intensity ratings on a scale from 0 (no sensation) to 10 (unbearable pain). Participants were instructed to maintain fixation on a crosshair display and keep their eyes open throughout the experiment.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Pain Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D058748"
-    },
-    {
-      "term": "laser-evoked potentials"
-    },
-    {
-      "term": "Nociception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D059225"
-    },
-    {
-      "term": "subjective pain rating"
-    }
-  ],
-  "source_hash": "32f01511f63e93c16ed366856be2a8a60364b3c021f1a94c9ae2f8ff18df79bf"
+  "source_hash": "4a904dbe20e6d60be1b475b9671b35f2df58b176373459801cc8195bcc9fa600"
 }
