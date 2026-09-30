@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "142 by Biosemi",
-  "description": "This dataset comprises EEG recordings from 142 participants undergoing laser-evoked pain stimulation with concurrent pain intensity ratings. Participants received fixed-intensity nociceptive stimuli at two levels (low and high pain) across three blocks of 10 stimuli each, with pain ratings collected on a 0-10 scale after each trial. The dataset provides neurophysiological and behavioral measures of pain perception suitable for investigating the neural correlates of pain processing.",
-  "methods_description": "EEG data were acquired using a Biosemi system during laser pain stimulation. Participants received fixed-intensity pain stimuli (3J/3.5J for participants 1-135; 3.5J/4J for participants 136-142) in three blocks of 10 stimuli each. Following each stimulus, participants provided pain intensity ratings on a 0-10 scale after a 5-second pause. Participants were instructed to maintain fixation on a crosshair display and keep their eyes open throughout the experiment.",
+  "description": "EEG recordings from 142 participants who received laser-evoked pain stimuli at fixed low and high intensities and rated the pain intensity after each stimulus. Each participant completed 3 blocks of 10 stimuli, with high and low pain stimuli evenly distributed within each block. Data were recorded with a Biosemi system and are intended for studying the neural correlates of pain perception.",
+  "methods_description": "Participants received laser stimuli at 3 J (low) and 3.5 J (high); participants 136-142 received 3.5 J (low) and 4 J (high). Each participant completed 3 blocks of 10 stimuli (30 total). They kept their eyes open and fixated on a crosshair. After each stimulus they rated pain on a 0-10 scale (0 = no sensation, 4 = pain onset, 6 = moderate, 8 = severe, 10 = unbearable). The next trial began at a random interval about 5 seconds after the rating.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,21 +20,23 @@
       "term": "EEG"
     },
     {
-      "term": "pain perception"
+      "term": "Pain",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010146"
     },
     {
       "term": "laser-evoked potentials"
     },
     {
-      "term": "Nociception",
+      "term": "Pain Perception",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D059225"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D058748"
     },
     {
       "term": "pain rating"
     },
     {
-      "term": "neurophysiology"
+      "term": "Biosemi"
     }
   ],
   "related_identifiers": [
@@ -44,14 +46,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005292",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005292.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005292",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -59,7 +61,7 @@
     "eeg"
   ],
   "sizes": [
-    "124.6 GB (1280 files)"
+    "116 GB (1280 files)"
   ],
   "formats": [
     ".bdf",
